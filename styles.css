@@ -82,6 +82,38 @@ body {
     color: var(--primary-color);
 }
 
+/* Language Selector */
+.language-selector {
+    display: flex;
+    gap: 5px;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #e5e7eb;
+}
+
+.lang-btn {
+    padding: 5px 12px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background: transparent;
+    color: var(--primary-color);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.lang-btn:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.lang-btn.active {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
 .menu-toggle {
     display: none;
     background: none;
@@ -499,6 +531,15 @@ body {
 
     .nav.active {
         display: flex;
+    }
+
+    .language-selector {
+        margin-left: 0;
+        padding-left: 0;
+        padding-top: 15px;
+        border-left: none;
+        border-top: 1px solid #e5e7eb;
+        justify-content: center;
     }
 
     .menu-toggle {
