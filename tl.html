@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mga Bahay Paupahan | USA Properties</title>
+    <title>USA Properties | Premium na Bahay Para Paupahan sa Estados Unidos</title>
+    <meta name="description" content="Hanapin ang iyong perpektong tahanan sa USA. Premium na mga ari-arian para sa pag-upa sa Miami, Los Angeles, New York, at iba pa. Propesyonal na serbisyo sa real estate.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
-            <div class="logo">
-                <i class="fas fa-home"></i>
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-home"></i>
+                </div>
                 <span>USA Properties</span>
-            </div>
-            <nav class="nav">
+            </a>
+            <nav class="nav" id="nav">
                 <a href="#simula">Simula</a>
                 <a href="#mga-ari-arian">Mga Ari-arian</a>
                 <a href="#mga-serbisyo">Mga Serbisyo</a>
+                <a href="#mga-testimonya">Mga Testimonya</a>
                 <a href="#makipag-ugnayan">Makipag-ugnayan</a>
                 <div class="language-selector">
                     <a href="index.html" class="lang-btn">EN</a>
@@ -35,142 +39,458 @@
 
     <!-- Hero Section -->
     <section class="hero" id="simula">
-        <div class="hero-content">
-            <h1>Hanapin ang Iyong Perpektong Tahanan sa Estados Unidos</h1>
-            <p>Ang pinakamahusay na mga ari-arian para sa pag-upa sa mga pangunahing lokasyon</p>
-            <a href="#mga-ari-arian" class="btn-primary">Tingnan ang Mga Ari-arian</a>
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920" alt="Luxury na Bahay">
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>#1 Rental Platform sa USA</span>
+                </div>
+                <h1>Hanapin ang Iyong Pangarap na Tahanan sa Estados Unidos</h1>
+                <p>Tuklasin ang premium na mga ari-arian para sa pag-upa sa pinaka-kanais-nais na mga lokasyon. Propesyonal na serbisyo, verified na mga listahan, at ang iyong perpektong tahanan ay naghihintay.</p>
+                <div class="hero-buttons">
+                    <a href="#mga-ari-arian" class="btn btn-primary btn-lg">
+                        <i class="fas fa-search"></i>
+                        Tuklasin ang mga Ari-arian
+                    </a>
+                    <a href="#makipag-ugnayan" class="btn btn-outline btn-lg">
+                        <i class="fas fa-phone"></i>
+                        Makipag-ugnayan
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">500+</div>
+                        <div class="hero-stat-label">Mga Available na Ari-arian</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">1,200+</div>
+                        <div class="hero-stat-label">Masasayang Kliyente</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">50+</div>
+                        <div class="hero-stat-label">Mga Lungsod na Sakop</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="hero-card-image">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600" alt="Featured Property">
+                    </div>
+                    <div class="hero-card-content">
+                        <h3>Modernong Luxury Villa</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Miami, Florida</p>
+                        <div class="hero-card-price">
+                            <span>$3,500/buwan</span>
+                            <a href="#makipag-ugnayan" class="btn btn-primary btn-sm">Tingnan ang Detalye</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-badge floating-badge-1">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="floating-badge-content">
+                        <strong>100% Verified</strong>
+                        <span>Lahat ng ari-arian ay nasuri</span>
+                    </div>
+                </div>
+                <div class="floating-badge floating-badge-2">
+                    <i class="fas fa-headset"></i>
+                    <div class="floating-badge-content">
+                        <strong>24/7 Suporta</strong>
+                        <span>Laging nandito para sa iyo</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Features Bar -->
+    <div class="container">
+        <div class="features-bar" data-animate>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Premium na Ari-arian</h4>
+                        <p>Pinili na mga kalidad na bahay</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Pinakamahusay na Presyo</h4>
+                        <p>Mapagkumpitensyang mga rate</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Madaling Proseso</h4>
+                        <p>Simpleng dokumentasyon</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Ligtas na Pag-upa</h4>
+                        <p>Protektadong mga transaksyon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Properties Section -->
     <section class="properties" id="mga-ari-arian">
         <div class="container">
-            <h2 class="section-title">Mga Available na Ari-arian</h2>
-            <p class="section-subtitle">Galugarin ang aming seleksyon ng mga bahay sa pinakamahusay na lokasyon</p>
+            <div class="section-header" data-animate>
+                <span class="section-badge">
+                    <i class="fas fa-building"></i>
+                    Aming mga Ari-arian
+                </span>
+                <h2>Mga Itinampok na Ari-arian Para sa Pag-upa</h2>
+                <p>Tuklasin ang aming pinili na seleksyon ng mga premium na bahay sa pinakamahusay na lokasyon sa Estados Unidos</p>
+            </div>
             
             <div class="properties-grid">
                 <!-- Property 1 -->
-                <div class="property-card">
+                <div class="property-card" data-animate>
                     <div class="property-image">
                         <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800" alt="Modernong Bahay sa Miami">
-                        <span class="property-badge">Available</span>
+                        <div class="property-badges">
+                            <span class="property-badge featured">Itinampok</span>
+                        </div>
+                        <button class="property-favorite"><i class="far fa-heart"></i></button>
                     </div>
                     <div class="property-info">
-                        <h3>Modernong Bahay sa Miami</h3>
-                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Miami, Florida</p>
+                        <div class="property-price">
+                            <strong>$3,500</strong>
+                            <span>/ buwan</span>
+                        </div>
+                        <h3>Modernong Luxury na Bahay</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Miami Beach, Florida
+                        </p>
                         <div class="property-features">
-                            <span><i class="fas fa-bed"></i> 4 na Silid-tulugan</span>
-                            <span><i class="fas fa-bath"></i> 3 Banyo</span>
-                            <span><i class="fas fa-ruler-combined"></i> 2,500 sqft</span>
+                            <div class="property-feature">
+                                <i class="fas fa-bed"></i>
+                                <span>4 Silid</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-bath"></i>
+                                <span>3 Banyo</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>2,500 sqft</span>
+                            </div>
                         </div>
-                        <div class="property-footer">
-                            <span class="property-price">$3,500/buwan</span>
-                            <a href="#makipag-ugnayan" class="btn-secondary">Higit Pang Info</a>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-agent">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="Ahente">
+                            <span>John Smith</span>
                         </div>
+                        <a href="#makipag-ugnayan" class="btn btn-secondary btn-sm">Detalye</a>
                     </div>
                 </div>
 
                 <!-- Property 2 -->
-                <div class="property-card">
+                <div class="property-card" data-animate>
                     <div class="property-image">
                         <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800" alt="Luxury Villa sa Los Angeles">
-                        <span class="property-badge">Itinampok</span>
+                        <div class="property-badges">
+                            <span class="property-badge new">Bago</span>
+                        </div>
+                        <button class="property-favorite"><i class="far fa-heart"></i></button>
                     </div>
                     <div class="property-info">
-                        <h3>Luxury Villa sa Los Angeles</h3>
-                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Los Angeles, California</p>
+                        <div class="property-price">
+                            <strong>$7,500</strong>
+                            <span>/ buwan</span>
+                        </div>
+                        <h3>Luxury Villa na may Pool</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Beverly Hills, California
+                        </p>
                         <div class="property-features">
-                            <span><i class="fas fa-bed"></i> 5 Silid-tulugan</span>
-                            <span><i class="fas fa-bath"></i> 4 na Banyo</span>
-                            <span><i class="fas fa-ruler-combined"></i> 4,200 sqft</span>
+                            <div class="property-feature">
+                                <i class="fas fa-bed"></i>
+                                <span>5 Silid</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-bath"></i>
+                                <span>4 Banyo</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>4,200 sqft</span>
+                            </div>
                         </div>
-                        <div class="property-footer">
-                            <span class="property-price">$7,500/buwan</span>
-                            <a href="#makipag-ugnayan" class="btn-secondary">Higit Pang Info</a>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-agent">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="Ahente">
+                            <span>Sarah Johnson</span>
                         </div>
+                        <a href="#makipag-ugnayan" class="btn btn-secondary btn-sm">Detalye</a>
                     </div>
                 </div>
 
                 <!-- Property 3 -->
-                <div class="property-card">
+                <div class="property-card" data-animate>
                     <div class="property-image">
-                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Pambahay na Bahay sa Houston">
-                        <span class="property-badge">Bago</span>
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Family Home sa Houston">
+                        <div class="property-badges">
+                            <span class="property-badge">Available</span>
+                        </div>
+                        <button class="property-favorite"><i class="far fa-heart"></i></button>
                     </div>
                     <div class="property-info">
-                        <h3>Pambahay na Bahay sa Houston</h3>
-                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Houston, Texas</p>
+                        <div class="property-price">
+                            <strong>$2,200</strong>
+                            <span>/ buwan</span>
+                        </div>
+                        <h3>Maginhawang Family Home</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Houston, Texas
+                        </p>
                         <div class="property-features">
-                            <span><i class="fas fa-bed"></i> 3 Silid-tulugan</span>
-                            <span><i class="fas fa-bath"></i> 2 Banyo</span>
-                            <span><i class="fas fa-ruler-combined"></i> 1,800 sqft</span>
+                            <div class="property-feature">
+                                <i class="fas fa-bed"></i>
+                                <span>3 Silid</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-bath"></i>
+                                <span>2 Banyo</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>1,800 sqft</span>
+                            </div>
                         </div>
-                        <div class="property-footer">
-                            <span class="property-price">$2,200/buwan</span>
-                            <a href="#makipag-ugnayan" class="btn-secondary">Higit Pang Info</a>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-agent">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100" alt="Ahente">
+                            <span>Mike Wilson</span>
                         </div>
+                        <a href="#makipag-ugnayan" class="btn btn-secondary btn-sm">Detalye</a>
                     </div>
                 </div>
 
                 <!-- Property 4 -->
-                <div class="property-card">
+                <div class="property-card" data-animate>
                     <div class="property-image">
                         <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=800" alt="Townhouse sa New York">
-                        <span class="property-badge">Available</span>
+                        <div class="property-badges">
+                            <span class="property-badge featured">Itinampok</span>
+                        </div>
+                        <button class="property-favorite"><i class="far fa-heart"></i></button>
                     </div>
                     <div class="property-info">
-                        <h3>Townhouse sa New York</h3>
-                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Brooklyn, New York</p>
+                        <div class="property-price">
+                            <strong>$4,800</strong>
+                            <span>/ buwan</span>
+                        </div>
+                        <h3>Brooklyn Townhouse</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Brooklyn, New York
+                        </p>
                         <div class="property-features">
-                            <span><i class="fas fa-bed"></i> 3 Silid-tulugan</span>
-                            <span><i class="fas fa-bath"></i> 2.5 Banyo</span>
-                            <span><i class="fas fa-ruler-combined"></i> 2,000 sqft</span>
+                            <div class="property-feature">
+                                <i class="fas fa-bed"></i>
+                                <span>3 Silid</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-bath"></i>
+                                <span>2.5 Banyo</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>2,000 sqft</span>
+                            </div>
                         </div>
-                        <div class="property-footer">
-                            <span class="property-price">$4,800/buwan</span>
-                            <a href="#makipag-ugnayan" class="btn-secondary">Higit Pang Info</a>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-agent">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" alt="Ahente">
+                            <span>Emily Davis</span>
                         </div>
+                        <a href="#makipag-ugnayan" class="btn btn-secondary btn-sm">Detalye</a>
                     </div>
                 </div>
 
                 <!-- Property 5 -->
-                <div class="property-card">
+                <div class="property-card" data-animate>
                     <div class="property-image">
-                        <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800" alt="Bahay na may Pool sa Phoenix">
-                        <span class="property-badge">Sikat</span>
+                        <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800" alt="Pool House sa Phoenix">
+                        <div class="property-badges">
+                            <span class="property-badge">Available</span>
+                        </div>
+                        <button class="property-favorite"><i class="far fa-heart"></i></button>
                     </div>
                     <div class="property-info">
-                        <h3>Bahay na may Pool sa Phoenix</h3>
-                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Phoenix, Arizona</p>
+                        <div class="property-price">
+                            <strong>$2,900</strong>
+                            <span>/ buwan</span>
+                        </div>
+                        <h3>Desert Oasis na may Pool</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Scottsdale, Arizona
+                        </p>
                         <div class="property-features">
-                            <span><i class="fas fa-bed"></i> 4 na Silid-tulugan</span>
-                            <span><i class="fas fa-bath"></i> 3 Banyo</span>
-                            <span><i class="fas fa-ruler-combined"></i> 2,800 sqft</span>
+                            <div class="property-feature">
+                                <i class="fas fa-bed"></i>
+                                <span>4 Silid</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-bath"></i>
+                                <span>3 Banyo</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>2,800 sqft</span>
+                            </div>
                         </div>
-                        <div class="property-footer">
-                            <span class="property-price">$2,900/buwan</span>
-                            <a href="#makipag-ugnayan" class="btn-secondary">Higit Pang Info</a>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-agent">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100" alt="Ahente">
+                            <span>Robert Brown</span>
                         </div>
+                        <a href="#makipag-ugnayan" class="btn btn-secondary btn-sm">Detalye</a>
                     </div>
                 </div>
 
                 <!-- Property 6 -->
-                <div class="property-card">
+                <div class="property-card" data-animate>
                     <div class="property-image">
-                        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800" alt="Colonial na Bahay sa Atlanta">
-                        <span class="property-badge">Available</span>
+                        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800" alt="Colonial House sa Atlanta">
+                        <div class="property-badges">
+                            <span class="property-badge new">Bago</span>
+                        </div>
+                        <button class="property-favorite"><i class="far fa-heart"></i></button>
                     </div>
                     <div class="property-info">
-                        <h3>Colonial na Bahay sa Atlanta</h3>
-                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Atlanta, Georgia</p>
-                        <div class="property-features">
-                            <span><i class="fas fa-bed"></i> 5 Silid-tulugan</span>
-                            <span><i class="fas fa-bath"></i> 4 na Banyo</span>
-                            <span><i class="fas fa-ruler-combined"></i> 3,500 sqft</span>
+                        <div class="property-price">
+                            <strong>$3,200</strong>
+                            <span>/ buwan</span>
                         </div>
-                        <div class="property-footer">
-                            <span class="property-price">$3,200/buwan</span>
-                            <a href="#makipag-ugnayan" class="btn-secondary">Higit Pang Info</a>
+                        <h3>Klasikong Colonial Estate</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Buckhead, Atlanta
+                        </p>
+                        <div class="property-features">
+                            <div class="property-feature">
+                                <i class="fas fa-bed"></i>
+                                <span>5 Silid</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-bath"></i>
+                                <span>4 Banyo</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>3,500 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-agent">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100" alt="Ahente">
+                            <span>Lisa Martinez</span>
+                        </div>
+                        <a href="#makipag-ugnayan" class="btn btn-secondary btn-sm">Detalye</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-animate>
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Mga Naka-lista na Ari-arian</div>
+                </div>
+                <div class="stat-item" data-animate>
+                    <div class="stat-number">1,200+</div>
+                    <div class="stat-label">Masasayang mga Nangungupahan</div>
+                </div>
+                <div class="stat-item" data-animate>
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Mga Lungsod na Sakop</div>
+                </div>
+                <div class="stat-item" data-animate>
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Kasiyahan ng Kliyente</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="why-us-image" data-animate>
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800" alt="Bakit Piliin Kami">
+                </div>
+                <div class="why-us-content" data-animate>
+                    <span class="section-badge">
+                        <i class="fas fa-award"></i>
+                        Bakit Piliin Kami
+                    </span>
+                    <h2>Ang Pinaka-Pinagkakatiwalaang Pangalan sa Property Rentals</h2>
+                    <p>May higit sa 10 taon ng karanasan sa real estate market, nagbibigay kami ng walang kapantay na serbisyo at pinakamahusay na seleksyon ng mga rental properties.</p>
+                    <div class="why-us-list">
+                        <div class="why-us-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="why-us-item-content">
+                                <h4>Verified na mga Ari-arian</h4>
+                                <p>Bawat listahan ay personal na ininspeksyon at na-verify ng aming koponan.</p>
+                            </div>
+                        </div>
+                        <div class="why-us-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="why-us-item-content">
+                                <h4>Walang Nakatagong Bayarin</h4>
+                                <p>Transparent na pagpepresyo na walang mga sorpresa o nakatagong gastos.</p>
+                            </div>
+                        </div>
+                        <div class="why-us-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="why-us-item-content">
+                                <h4>24/7 Suporta</h4>
+                                <p>Buong-oras na tulong sa Ingles, Espanyol, at Filipino.</p>
+                            </div>
+                        </div>
+                        <div class="why-us-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="why-us-item-content">
+                                <h4>Mabilis na Proseso</h4>
+                                <p>Lumipat sa iyong bagong tahanan sa loob lamang ng 48 oras.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -181,41 +501,138 @@
     <!-- Services Section -->
     <section class="services" id="mga-serbisyo">
         <div class="container">
-            <h2 class="section-title">Ang Aming Mga Serbisyo</h2>
-            <p class="section-subtitle">Samahan ka namin sa buong proseso ng pag-upa</p>
+            <div class="section-header" data-animate>
+                <span class="section-badge">
+                    <i class="fas fa-concierge-bell"></i>
+                    Aming mga Serbisyo
+                </span>
+                <h2>Kumpletong Rental Solutions</h2>
+                <p>Nag-aalok kami ng komprehensibong mga serbisyo upang gawing maayos at walang abala ang iyong rental experience</p>
+            </div>
             
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card" data-animate>
                     <div class="service-icon">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-search-location"></i>
                     </div>
-                    <h3>Personalized na Paghahanap</h3>
-                    <p>Hahanapin namin ang perpektong ari-arian ayon sa iyong mga pangangailangan at badyet.</p>
+                    <h3>Paghahanap ng Ari-arian</h3>
+                    <p>Personalized na paghahanap ng property batay sa iyong mga kagustuhan, badyet, at gustong lokasyon.</p>
                 </div>
                 
-                <div class="service-card">
+                <div class="service-card" data-animate>
                     <div class="service-icon">
                         <i class="fas fa-file-contract"></i>
                     </div>
-                    <h3>Pamamahala ng Kontrata</h3>
-                    <p>Pinamamahalaan namin ang lahat ng legal na dokumentasyon para sa ligtas na pag-upa.</p>
+                    <h3>Legal na Dokumentasyon</h3>
+                    <p>Kumpletong pangangasiwa ng mga kontrata sa pag-upa at lahat ng legal na papeles.</p>
                 </div>
                 
-                <div class="service-card">
+                <div class="service-card" data-animate>
                     <div class="service-icon">
                         <i class="fas fa-tools"></i>
                     </div>
-                    <h3>Pagpapanatili</h3>
-                    <p>Serbisyong pagpapanatili 24/7 para sa lahat ng aming mga ari-arian.</p>
+                    <h3>Property Maintenance</h3>
+                    <p>24/7 serbisyo ng maintenance para sa lahat ng mga ari-arian sa ilalim ng aming pamamahala.</p>
                 </div>
                 
-                <div class="service-card">
+                <div class="service-card" data-animate>
                     <div class="service-icon">
-                        <i class="fas fa-headset"></i>
+                        <i class="fas fa-truck-moving"></i>
                     </div>
-                    <h3>Suporta sa Customer</h3>
-                    <p>Suporta sa Ingles, Espanyol, at Filipino na available sa lahat ng oras.</p>
+                    <h3>Tulong sa Paglipat</h3>
+                    <p>Koordinasyon sa mga pinagkakatiwalaang moving companies at relocation support.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="mga-testimonya">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-badge">
+                    <i class="fas fa-comments"></i>
+                    Mga Testimonya
+                </span>
+                <h2>Ano ang Sinasabi ng Aming mga Kliyente</h2>
+                <p>Tunay na mga kwento mula sa mga tunay na nangungupahan na nakahanap ng kanilang perpektong tahanan sa amin</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Ginawang napakadali ng USA Properties ang paghahanap ng aming pangarap na tahanan! Propesyonal, mabilis tumugon, at nakahanap kami ng perpektong lugar sa loob ng aming badyet. Highly recommended!</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="Kliyente">
+                        <div class="testimonial-author-info">
+                            <strong>Michael Thompson</strong>
+                            <span>Miami, FL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Bilang isang taong nagre-relocate mula sa Pilipinas, nag-aalala ako tungkol sa proseso ng pag-upa. Ang multilingual support ay napakahusay, at ginabayan nila ako sa bawat hakbang!</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="Kliyente">
+                        <div class="testimonial-author-info">
+                            <strong>Maria Santos</strong>
+                            <span>Los Angeles, CA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Ang maintenance service ay napakahusay. Anumang problema na mayroon kami ay nalutas sa loob ng ilang oras. Malinaw na talagang nagmamalasakit sila sa kaginhawaan ng kanilang mga nangungupahan.</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100" alt="Kliyente">
+                        <div class="testimonial-author-info">
+                            <strong>David Rodriguez</strong>
+                            <span>Houston, TX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Handa Ka Na Bang Hanapin ang Iyong Perpektong Tahanan?</h2>
+            <p>Makipag-ugnayan sa amin ngayon at hayaang tulungan ka ng aming mga eksperto na mahanap ang ideal na rental property na akma sa iyong lifestyle at badyet.</p>
+            <div class="cta-buttons">
+                <a href="#makipag-ugnayan" class="btn btn-primary btn-lg">
+                    <i class="fas fa-envelope"></i>
+                    Makipag-ugnayan
+                </a>
+                <a href="tel:+15551234567" class="btn btn-outline btn-lg">
+                    <i class="fas fa-phone"></i>
+                    Tumawag: (555) 123-4567
+                </a>
             </div>
         </div>
     </section>
@@ -223,67 +640,106 @@
     <!-- Contact Section -->
     <section class="contact" id="makipag-ugnayan">
         <div class="container">
-            <h2 class="section-title">Makipag-ugnayan sa Amin</h2>
-            <p class="section-subtitle">Nandito kami upang tulungan kang mahanap ang iyong susunod na tahanan</p>
+            <div class="section-header" data-animate>
+                <span class="section-badge">
+                    <i class="fas fa-envelope"></i>
+                    Makipag-ugnayan
+                </span>
+                <h2>Makipag-ugnayan sa Amin</h2>
+                <p>May mga tanong? Nandito kami upang tulungan kang mahanap ang iyong perpektong tahanan</p>
+            </div>
             
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Telepono</h4>
-                            <p>+1 (555) 123-4567</p>
+            <div class="contact-grid">
+                <div class="contact-info-card" data-animate>
+                    <h3>Impormasyon sa Pakikipag-ugnayan</h3>
+                    <p>Punan ang form at ang aming koponan ay tutugon sa loob ng 24 na oras.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-item-content">
+                                <h4>Telepono</h4>
+                                <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-item-content">
+                                <h4>Email</h4>
+                                <a href="mailto:info@usaproperties.com">info@usaproperties.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-item-content">
+                                <h4>Opisina</h4>
+                                <p>123 Main Street, Miami, FL 33101</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="contact-item-content">
+                                <h4>Oras ng Trabaho</h4>
+                                <p>Lun - Biy: 9AM - 6PM</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@usaproperties.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Pangunahing Opisina</h4>
-                            <p>123 Main Street, Miami, FL 33101</p>
-                        </div>
-                    </div>
+                    
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" placeholder="Buong Pangalan" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Email Address" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" placeholder="Numero ng Telepono">
-                    </div>
-                    <div class="form-group">
-                        <select>
-                            <option value="">Anong ari-arian ang interesado ka?</option>
-                            <option value="miami">Modernong Bahay sa Miami</option>
-                            <option value="la">Luxury Villa sa Los Angeles</option>
-                            <option value="houston">Pambahay na Bahay sa Houston</option>
-                            <option value="ny">Townhouse sa New York</option>
-                            <option value="phoenix">Bahay na may Pool sa Phoenix</option>
-                            <option value="atlanta">Colonial na Bahay sa Atlanta</option>
-                            <option value="other">Iba pa / Hindi sigurado</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Mensahe" rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">Ipadala ang Mensahe</button>
-                </form>
+                <div class="contact-form-card" data-animate>
+                    <h3>Magpadala ng Mensahe</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Pangalan</label>
+                                <input type="text" id="firstName" placeholder="Juan" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Apelyido</label>
+                                <input type="text" id="lastName" placeholder="Dela Cruz" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="juan@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telepono</label>
+                                <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="property">Interes sa Ari-arian</label>
+                            <select id="property">
+                                <option value="">Pumili ng ari-arian...</option>
+                                <option value="miami">Modernong Luxury House - Miami</option>
+                                <option value="la">Luxury Villa na may Pool - Los Angeles</option>
+                                <option value="houston">Family Home - Houston</option>
+                                <option value="ny">Brooklyn Townhouse - New York</option>
+                                <option value="phoenix">Desert Oasis - Arizona</option>
+                                <option value="atlanta">Colonial Estate - Atlanta</option>
+                                <option value="other">Iba pa / Hindi pa sigurado</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensahe</label>
+                            <textarea id="message" rows="4" placeholder="Sabihin sa amin ang tungkol sa iyong ideal na tahanan..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane"></i>
+                            Ipadala ang Mensahe
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -291,19 +747,77 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <i class="fas fa-home"></i>
-                    <span>USA Properties</span>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <span>USA Properties</span>
+                    </a>
+                    <p>Ang iyong pinagkakatiwalaang kasosyo sa paghahanap ng perpektong rental home sa Estados Unidos. Premium na mga ari-arian, propesyonal na serbisyo, at garantisadong kasiyahan.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
+                
+                <div class="footer-column">
+                    <h4>Mga Mabilis na Link</h4>
+                    <ul class="footer-links">
+                        <li><a href="#simula"><i class="fas fa-chevron-right"></i> Simula</a></li>
+                        <li><a href="#mga-ari-arian"><i class="fas fa-chevron-right"></i> Mga Ari-arian</a></li>
+                        <li><a href="#mga-serbisyo"><i class="fas fa-chevron-right"></i> Mga Serbisyo</a></li>
+                        <li><a href="#mga-testimonya"><i class="fas fa-chevron-right"></i> Mga Testimonya</a></li>
+                        <li><a href="#makipag-ugnayan"><i class="fas fa-chevron-right"></i> Makipag-ugnayan</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Mga Lokasyon</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Miami, FL</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Los Angeles, CA</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> New York, NY</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Houston, TX</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Atlanta, GA</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Makipag-ugnayan</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Main Street<br>Miami, FL 33101</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@usaproperties.com">info@usaproperties.com</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
                 <p>&copy; 2026 USA Properties. Lahat ng karapatan ay nakalaan.</p>
-                <div class="footer-links">
+                <div class="footer-bottom-links">
                     <a href="#">Patakaran sa Privacy</a>
-                    <a href="#">Mga Tuntunin ng Paggamit</a>
+                    <a href="#">Mga Tuntunin ng Serbisyo</a>
+                    <a href="#">Patakaran sa Cookie</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>

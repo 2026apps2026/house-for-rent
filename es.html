@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casas en Renta | USA Properties</title>
+    <title>USA Properties | Casas Premium en Renta en Estados Unidos</title>
+    <meta name="description" content="Encuentra tu hogar perfecto en USA. Propiedades de renta premium en Miami, Los Angeles, Nueva York y más. Servicios inmobiliarios profesionales.">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
-            <div class="logo">
-                <i class="fas fa-home"></i>
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-home"></i>
+                </div>
                 <span>USA Properties</span>
-            </div>
-            <nav class="nav">
+            </a>
+            <nav class="nav" id="nav">
                 <a href="#inicio">Inicio</a>
                 <a href="#propiedades">Propiedades</a>
                 <a href="#servicios">Servicios</a>
+                <a href="#testimonios">Testimonios</a>
                 <a href="#contacto">Contacto</a>
                 <div class="language-selector">
                     <a href="index.html" class="lang-btn">EN</a>
@@ -35,142 +39,458 @@
 
     <!-- Hero Section -->
     <section class="hero" id="inicio">
-        <div class="hero-content">
-            <h1>Encuentra tu Casa Ideal en Estados Unidos</h1>
-            <p>Las mejores propiedades en renta con ubicaciones privilegiadas</p>
-            <a href="#propiedades" class="btn-primary">Ver Propiedades</a>
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920" alt="Casa de Lujo">
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Plataforma #1 de Rentas en USA</span>
+                </div>
+                <h1>Encuentra tu Casa Ideal en Estados Unidos</h1>
+                <p>Descubre propiedades premium en las ubicaciones más deseadas. Servicio profesional, listados verificados y tu hogar perfecto te espera.</p>
+                <div class="hero-buttons">
+                    <a href="#propiedades" class="btn btn-primary btn-lg">
+                        <i class="fas fa-search"></i>
+                        Explorar Propiedades
+                    </a>
+                    <a href="#contacto" class="btn btn-outline btn-lg">
+                        <i class="fas fa-phone"></i>
+                        Contáctanos
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">500+</div>
+                        <div class="hero-stat-label">Propiedades Disponibles</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">1,200+</div>
+                        <div class="hero-stat-label">Clientes Felices</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">50+</div>
+                        <div class="hero-stat-label">Ciudades Cubiertas</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="hero-card-image">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600" alt="Propiedad Destacada">
+                    </div>
+                    <div class="hero-card-content">
+                        <h3>Villa de Lujo Moderna</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Miami, Florida</p>
+                        <div class="hero-card-price">
+                            <span>$3,500/mes</span>
+                            <a href="#contacto" class="btn btn-primary btn-sm">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-badge floating-badge-1">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="floating-badge-content">
+                        <strong>100% Verificado</strong>
+                        <span>Propiedades revisadas</span>
+                    </div>
+                </div>
+                <div class="floating-badge floating-badge-2">
+                    <i class="fas fa-headset"></i>
+                    <div class="floating-badge-content">
+                        <strong>Soporte 24/7</strong>
+                        <span>Siempre para ti</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- Features Bar -->
+    <div class="container">
+        <div class="features-bar" data-animate>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Propiedades Premium</h4>
+                        <p>Hogares de calidad seleccionados</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Mejores Precios</h4>
+                        <p>Tarifas de renta competitivas</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Proceso Fácil</h4>
+                        <p>Documentación simple</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h4>Rentas Seguras</h4>
+                        <p>Transacciones protegidas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Properties Section -->
     <section class="properties" id="propiedades">
         <div class="container">
-            <h2 class="section-title">Propiedades Disponibles</h2>
-            <p class="section-subtitle">Explora nuestra selección de casas en las mejores ubicaciones</p>
+            <div class="section-header" data-animate>
+                <span class="section-badge">
+                    <i class="fas fa-building"></i>
+                    Nuestras Propiedades
+                </span>
+                <h2>Propiedades Destacadas en Renta</h2>
+                <p>Explora nuestra selección curada de hogares premium en las mejores ubicaciones de Estados Unidos</p>
+            </div>
             
             <div class="properties-grid">
                 <!-- Property 1 -->
-                <div class="property-card">
+                <div class="property-card" data-animate>
                     <div class="property-image">
                         <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800" alt="Casa Moderna en Miami">
-                        <span class="property-badge">Disponible</span>
+                        <div class="property-badges">
+                            <span class="property-badge featured">Destacada</span>
+                        </div>
+                        <button class="property-favorite"><i class="far fa-heart"></i></button>
                     </div>
                     <div class="property-info">
-                        <h3>Casa Moderna en Miami</h3>
-                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Miami, Florida</p>
+                        <div class="property-price">
+                            <strong>$3,500</strong>
+                            <span>/ mes</span>
+                        </div>
+                        <h3>Casa de Lujo Moderna</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Miami Beach, Florida
+                        </p>
                         <div class="property-features">
-                            <span><i class="fas fa-bed"></i> 4 Habitaciones</span>
-                            <span><i class="fas fa-bath"></i> 3 Baños</span>
-                            <span><i class="fas fa-ruler-combined"></i> 2,500 sqft</span>
+                            <div class="property-feature">
+                                <i class="fas fa-bed"></i>
+                                <span>4 Hab.</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-bath"></i>
+                                <span>3 Baños</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>2,500 sqft</span>
+                            </div>
                         </div>
-                        <div class="property-footer">
-                            <span class="property-price">$3,500/mes</span>
-                            <a href="#contacto" class="btn-secondary">Más Info</a>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-agent">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="Agente">
+                            <span>John Smith</span>
                         </div>
+                        <a href="#contacto" class="btn btn-secondary btn-sm">Detalles</a>
                     </div>
                 </div>
 
                 <!-- Property 2 -->
-                <div class="property-card">
+                <div class="property-card" data-animate>
                     <div class="property-image">
-                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800" alt="Villa de Lujo en Los Angeles">
-                        <span class="property-badge">Destacada</span>
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800" alt="Villa de Lujo Los Angeles">
+                        <div class="property-badges">
+                            <span class="property-badge new">Nueva</span>
+                        </div>
+                        <button class="property-favorite"><i class="far fa-heart"></i></button>
                     </div>
                     <div class="property-info">
-                        <h3>Villa de Lujo en Los Angeles</h3>
-                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Los Angeles, California</p>
+                        <div class="property-price">
+                            <strong>$7,500</strong>
+                            <span>/ mes</span>
+                        </div>
+                        <h3>Villa de Lujo con Piscina</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Beverly Hills, California
+                        </p>
                         <div class="property-features">
-                            <span><i class="fas fa-bed"></i> 5 Habitaciones</span>
-                            <span><i class="fas fa-bath"></i> 4 Baños</span>
-                            <span><i class="fas fa-ruler-combined"></i> 4,200 sqft</span>
+                            <div class="property-feature">
+                                <i class="fas fa-bed"></i>
+                                <span>5 Hab.</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-bath"></i>
+                                <span>4 Baños</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>4,200 sqft</span>
+                            </div>
                         </div>
-                        <div class="property-footer">
-                            <span class="property-price">$7,500/mes</span>
-                            <a href="#contacto" class="btn-secondary">Más Info</a>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-agent">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="Agente">
+                            <span>Sarah Johnson</span>
                         </div>
+                        <a href="#contacto" class="btn btn-secondary btn-sm">Detalles</a>
                     </div>
                 </div>
 
                 <!-- Property 3 -->
-                <div class="property-card">
+                <div class="property-card" data-animate>
                     <div class="property-image">
-                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Casa Familiar en Houston">
-                        <span class="property-badge">Nueva</span>
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800" alt="Casa Familiar Houston">
+                        <div class="property-badges">
+                            <span class="property-badge">Disponible</span>
+                        </div>
+                        <button class="property-favorite"><i class="far fa-heart"></i></button>
                     </div>
                     <div class="property-info">
-                        <h3>Casa Familiar en Houston</h3>
-                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Houston, Texas</p>
+                        <div class="property-price">
+                            <strong>$2,200</strong>
+                            <span>/ mes</span>
+                        </div>
+                        <h3>Casa Familiar Acogedora</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Houston, Texas
+                        </p>
                         <div class="property-features">
-                            <span><i class="fas fa-bed"></i> 3 Habitaciones</span>
-                            <span><i class="fas fa-bath"></i> 2 Baños</span>
-                            <span><i class="fas fa-ruler-combined"></i> 1,800 sqft</span>
+                            <div class="property-feature">
+                                <i class="fas fa-bed"></i>
+                                <span>3 Hab.</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-bath"></i>
+                                <span>2 Baños</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>1,800 sqft</span>
+                            </div>
                         </div>
-                        <div class="property-footer">
-                            <span class="property-price">$2,200/mes</span>
-                            <a href="#contacto" class="btn-secondary">Más Info</a>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-agent">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100" alt="Agente">
+                            <span>Mike Wilson</span>
                         </div>
+                        <a href="#contacto" class="btn btn-secondary btn-sm">Detalles</a>
                     </div>
                 </div>
 
                 <!-- Property 4 -->
-                <div class="property-card">
+                <div class="property-card" data-animate>
                     <div class="property-image">
-                        <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=800" alt="Townhouse en Nueva York">
-                        <span class="property-badge">Disponible</span>
+                        <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?w=800" alt="Townhouse Nueva York">
+                        <div class="property-badges">
+                            <span class="property-badge featured">Destacada</span>
+                        </div>
+                        <button class="property-favorite"><i class="far fa-heart"></i></button>
                     </div>
                     <div class="property-info">
-                        <h3>Townhouse en Nueva York</h3>
-                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Brooklyn, New York</p>
+                        <div class="property-price">
+                            <strong>$4,800</strong>
+                            <span>/ mes</span>
+                        </div>
+                        <h3>Townhouse en Brooklyn</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Brooklyn, Nueva York
+                        </p>
                         <div class="property-features">
-                            <span><i class="fas fa-bed"></i> 3 Habitaciones</span>
-                            <span><i class="fas fa-bath"></i> 2.5 Baños</span>
-                            <span><i class="fas fa-ruler-combined"></i> 2,000 sqft</span>
+                            <div class="property-feature">
+                                <i class="fas fa-bed"></i>
+                                <span>3 Hab.</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-bath"></i>
+                                <span>2.5 Baños</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>2,000 sqft</span>
+                            </div>
                         </div>
-                        <div class="property-footer">
-                            <span class="property-price">$4,800/mes</span>
-                            <a href="#contacto" class="btn-secondary">Más Info</a>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-agent">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100" alt="Agente">
+                            <span>Emily Davis</span>
                         </div>
+                        <a href="#contacto" class="btn btn-secondary btn-sm">Detalles</a>
                     </div>
                 </div>
 
                 <!-- Property 5 -->
-                <div class="property-card">
+                <div class="property-card" data-animate>
                     <div class="property-image">
-                        <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800" alt="Casa con Piscina en Phoenix">
-                        <span class="property-badge">Popular</span>
+                        <img src="https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800" alt="Casa con Piscina Phoenix">
+                        <div class="property-badges">
+                            <span class="property-badge">Disponible</span>
+                        </div>
+                        <button class="property-favorite"><i class="far fa-heart"></i></button>
                     </div>
                     <div class="property-info">
-                        <h3>Casa con Piscina en Phoenix</h3>
-                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Phoenix, Arizona</p>
+                        <div class="property-price">
+                            <strong>$2,900</strong>
+                            <span>/ mes</span>
+                        </div>
+                        <h3>Oasis del Desierto con Piscina</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Scottsdale, Arizona
+                        </p>
                         <div class="property-features">
-                            <span><i class="fas fa-bed"></i> 4 Habitaciones</span>
-                            <span><i class="fas fa-bath"></i> 3 Baños</span>
-                            <span><i class="fas fa-ruler-combined"></i> 2,800 sqft</span>
+                            <div class="property-feature">
+                                <i class="fas fa-bed"></i>
+                                <span>4 Hab.</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-bath"></i>
+                                <span>3 Baños</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>2,800 sqft</span>
+                            </div>
                         </div>
-                        <div class="property-footer">
-                            <span class="property-price">$2,900/mes</span>
-                            <a href="#contacto" class="btn-secondary">Más Info</a>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-agent">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100" alt="Agente">
+                            <span>Robert Brown</span>
                         </div>
+                        <a href="#contacto" class="btn btn-secondary btn-sm">Detalles</a>
                     </div>
                 </div>
 
                 <!-- Property 6 -->
-                <div class="property-card">
+                <div class="property-card" data-animate>
                     <div class="property-image">
-                        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800" alt="Casa Colonial en Atlanta">
-                        <span class="property-badge">Disponible</span>
+                        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800" alt="Casa Colonial Atlanta">
+                        <div class="property-badges">
+                            <span class="property-badge new">Nueva</span>
+                        </div>
+                        <button class="property-favorite"><i class="far fa-heart"></i></button>
                     </div>
                     <div class="property-info">
-                        <h3>Casa Colonial en Atlanta</h3>
-                        <p class="property-location"><i class="fas fa-map-marker-alt"></i> Atlanta, Georgia</p>
-                        <div class="property-features">
-                            <span><i class="fas fa-bed"></i> 5 Habitaciones</span>
-                            <span><i class="fas fa-bath"></i> 4 Baños</span>
-                            <span><i class="fas fa-ruler-combined"></i> 3,500 sqft</span>
+                        <div class="property-price">
+                            <strong>$3,200</strong>
+                            <span>/ mes</span>
                         </div>
-                        <div class="property-footer">
-                            <span class="property-price">$3,200/mes</span>
-                            <a href="#contacto" class="btn-secondary">Más Info</a>
+                        <h3>Mansión Colonial Clásica</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Buckhead, Atlanta
+                        </p>
+                        <div class="property-features">
+                            <div class="property-feature">
+                                <i class="fas fa-bed"></i>
+                                <span>5 Hab.</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-bath"></i>
+                                <span>4 Baños</span>
+                            </div>
+                            <div class="property-feature">
+                                <i class="fas fa-ruler-combined"></i>
+                                <span>3,500 sqft</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-agent">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100" alt="Agente">
+                            <span>Lisa Martínez</span>
+                        </div>
+                        <a href="#contacto" class="btn btn-secondary btn-sm">Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-animate>
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Propiedades Listadas</div>
+                </div>
+                <div class="stat-item" data-animate>
+                    <div class="stat-number">1,200+</div>
+                    <div class="stat-label">Inquilinos Felices</div>
+                </div>
+                <div class="stat-item" data-animate>
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Ciudades Cubiertas</div>
+                </div>
+                <div class="stat-item" data-animate>
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Satisfacción del Cliente</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="why-us-image" data-animate>
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800" alt="Por Qué Elegirnos">
+                </div>
+                <div class="why-us-content" data-animate>
+                    <span class="section-badge">
+                        <i class="fas fa-award"></i>
+                        Por Qué Elegirnos
+                    </span>
+                    <h2>El Nombre Más Confiable en Rentas de Propiedades</h2>
+                    <p>Con más de 10 años de experiencia en el mercado inmobiliario, brindamos un servicio inigualable y la mejor selección de propiedades en renta.</p>
+                    <div class="why-us-list">
+                        <div class="why-us-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="why-us-item-content">
+                                <h4>Propiedades Verificadas</h4>
+                                <p>Cada listado es inspeccionado y verificado personalmente por nuestro equipo.</p>
+                            </div>
+                        </div>
+                        <div class="why-us-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="why-us-item-content">
+                                <h4>Sin Cargos Ocultos</h4>
+                                <p>Precios transparentes sin sorpresas ni costos escondidos.</p>
+                            </div>
+                        </div>
+                        <div class="why-us-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="why-us-item-content">
+                                <h4>Soporte 24/7</h4>
+                                <p>Asistencia las 24 horas en inglés, español y filipino.</p>
+                            </div>
+                        </div>
+                        <div class="why-us-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="why-us-item-content">
+                                <h4>Proceso Rápido</h4>
+                                <p>Múdate a tu nuevo hogar en tan solo 48 horas.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -181,41 +501,138 @@
     <!-- Services Section -->
     <section class="services" id="servicios">
         <div class="container">
-            <h2 class="section-title">Nuestros Servicios</h2>
-            <p class="section-subtitle">Te acompañamos en todo el proceso de renta</p>
+            <div class="section-header" data-animate>
+                <span class="section-badge">
+                    <i class="fas fa-concierge-bell"></i>
+                    Nuestros Servicios
+                </span>
+                <h2>Soluciones Completas de Renta</h2>
+                <p>Ofrecemos servicios integrales para hacer tu experiencia de renta fluida y sin complicaciones</p>
+            </div>
             
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card" data-animate>
                     <div class="service-icon">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-search-location"></i>
                     </div>
-                    <h3>Búsqueda Personalizada</h3>
-                    <p>Encontramos la propiedad perfecta según tus necesidades y presupuesto.</p>
+                    <h3>Búsqueda de Propiedades</h3>
+                    <p>Búsqueda personalizada basada en tus preferencias, presupuesto y ubicación deseada.</p>
                 </div>
                 
-                <div class="service-card">
+                <div class="service-card" data-animate>
                     <div class="service-icon">
                         <i class="fas fa-file-contract"></i>
                     </div>
-                    <h3>Gestión de Contratos</h3>
-                    <p>Manejamos toda la documentación legal para una renta segura.</p>
+                    <h3>Documentación Legal</h3>
+                    <p>Manejo completo de contratos de arrendamiento y toda la documentación legal.</p>
                 </div>
                 
-                <div class="service-card">
+                <div class="service-card" data-animate>
                     <div class="service-icon">
                         <i class="fas fa-tools"></i>
                     </div>
                     <h3>Mantenimiento</h3>
-                    <p>Servicio de mantenimiento 24/7 para todas nuestras propiedades.</p>
+                    <p>Servicio de mantenimiento 24/7 para todas las propiedades bajo nuestra administración.</p>
                 </div>
                 
-                <div class="service-card">
+                <div class="service-card" data-animate>
                     <div class="service-icon">
-                        <i class="fas fa-headset"></i>
+                        <i class="fas fa-truck-moving"></i>
                     </div>
-                    <h3>Atención al Cliente</h3>
-                    <p>Soporte en español, inglés y filipino disponible en todo momento.</p>
+                    <h3>Asistencia de Mudanza</h3>
+                    <p>Coordinación con empresas de mudanza confiables y soporte de reubicación.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header" data-animate>
+                <span class="section-badge">
+                    <i class="fas fa-comments"></i>
+                    Testimonios
+                </span>
+                <h2>Lo Que Dicen Nuestros Clientes</h2>
+                <p>Historias reales de inquilinos que encontraron su hogar perfecto con nosotros</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">¡USA Properties hizo que encontrar nuestra casa soñada fuera muy fácil! El equipo fue profesional, receptivo y nos encontró el lugar perfecto dentro de nuestro presupuesto. ¡Altamente recomendado!</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="Cliente">
+                        <div class="testimonial-author-info">
+                            <strong>Miguel Thompson</strong>
+                            <span>Miami, FL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">Como alguien que se reubicaba desde Filipinas, estaba preocupado por el proceso de renta. ¡El soporte multilingüe fue increíble y me guiaron en cada paso!</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="Cliente">
+                        <div class="testimonial-author-info">
+                            <strong>María Santos</strong>
+                            <span>Los Angeles, CA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-animate>
+                    <div class="testimonial-quote">"</div>
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">El servicio de mantenimiento es de primera. Cualquier problema que hemos tenido se resolvió en horas. Es claro que realmente se preocupan por la comodidad de sus inquilinos.</p>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100" alt="Cliente">
+                        <div class="testimonial-author-info">
+                            <strong>David Rodríguez</strong>
+                            <span>Houston, TX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>¿Listo para Encontrar tu Hogar Perfecto?</h2>
+            <p>Contáctanos hoy y deja que nuestro equipo experto te ayude a encontrar la propiedad ideal que se ajuste a tu estilo de vida y presupuesto.</p>
+            <div class="cta-buttons">
+                <a href="#contacto" class="btn btn-primary btn-lg">
+                    <i class="fas fa-envelope"></i>
+                    Contáctanos
+                </a>
+                <a href="tel:+15551234567" class="btn btn-outline btn-lg">
+                    <i class="fas fa-phone"></i>
+                    Llama: (555) 123-4567
+                </a>
             </div>
         </div>
     </section>
@@ -223,67 +640,106 @@
     <!-- Contact Section -->
     <section class="contact" id="contacto">
         <div class="container">
-            <h2 class="section-title">Contáctanos</h2>
-            <p class="section-subtitle">Estamos aquí para ayudarte a encontrar tu próximo hogar</p>
+            <div class="section-header" data-animate>
+                <span class="section-badge">
+                    <i class="fas fa-envelope"></i>
+                    Contacto
+                </span>
+                <h2>Ponte en Contacto</h2>
+                <p>¿Tienes preguntas? Estamos aquí para ayudarte a encontrar tu hogar perfecto</p>
+            </div>
             
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Teléfono</h4>
-                            <p>+1 (555) 123-4567</p>
+            <div class="contact-grid">
+                <div class="contact-info-card" data-animate>
+                    <h3>Información de Contacto</h3>
+                    <p>Llena el formulario y nuestro equipo te responderá en 24 horas.</p>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-item-content">
+                                <h4>Teléfono</h4>
+                                <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-item-content">
+                                <h4>Email</h4>
+                                <a href="mailto:info@usaproperties.com">info@usaproperties.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-item-content">
+                                <h4>Oficina</h4>
+                                <p>123 Main Street, Miami, FL 33101</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="contact-item-content">
+                                <h4>Horario</h4>
+                                <p>Lun - Vie: 9AM - 6PM</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@usaproperties.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Oficina Principal</h4>
-                            <p>123 Main Street, Miami, FL 33101</p>
-                        </div>
-                    </div>
+                    
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" placeholder="Nombre completo" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Correo electrónico" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="tel" placeholder="Teléfono">
-                    </div>
-                    <div class="form-group">
-                        <select>
-                            <option value="">¿Qué propiedad te interesa?</option>
-                            <option value="miami">Casa Moderna en Miami</option>
-                            <option value="la">Villa de Lujo en Los Angeles</option>
-                            <option value="houston">Casa Familiar en Houston</option>
-                            <option value="ny">Townhouse en Nueva York</option>
-                            <option value="phoenix">Casa con Piscina en Phoenix</option>
-                            <option value="atlanta">Casa Colonial en Atlanta</option>
-                            <option value="otra">Otra / No estoy seguro</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Mensaje" rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
-                </form>
+                <div class="contact-form-card" data-animate>
+                    <h3>Envíanos un Mensaje</h3>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">Nombre</label>
+                                <input type="text" id="firstName" placeholder="Juan" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Apellido</label>
+                                <input type="text" id="lastName" placeholder="Pérez" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" placeholder="juan@ejemplo.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" placeholder="+1 (555) 000-0000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="property">Propiedad de Interés</label>
+                            <select id="property">
+                                <option value="">Selecciona una propiedad...</option>
+                                <option value="miami">Casa de Lujo Moderna - Miami</option>
+                                <option value="la">Villa de Lujo con Piscina - Los Angeles</option>
+                                <option value="houston">Casa Familiar Acogedora - Houston</option>
+                                <option value="ny">Townhouse en Brooklyn - Nueva York</option>
+                                <option value="phoenix">Oasis del Desierto - Arizona</option>
+                                <option value="atlanta">Mansión Colonial - Atlanta</option>
+                                <option value="other">Otra / Aún no estoy seguro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" rows="4" placeholder="Cuéntanos sobre tu hogar ideal..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -291,19 +747,77 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <i class="fas fa-home"></i>
-                    <span>USA Properties</span>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <span>USA Properties</span>
+                    </a>
+                    <p>Tu socio de confianza para encontrar el hogar perfecto en renta en Estados Unidos. Propiedades premium, servicio profesional y tu satisfacción garantizada.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
+                
+                <div class="footer-column">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                        <li><a href="#propiedades"><i class="fas fa-chevron-right"></i> Propiedades</a></li>
+                        <li><a href="#servicios"><i class="fas fa-chevron-right"></i> Servicios</a></li>
+                        <li><a href="#testimonios"><i class="fas fa-chevron-right"></i> Testimonios</a></li>
+                        <li><a href="#contacto"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Ubicaciones</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Miami, FL</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Los Angeles, CA</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Nueva York, NY</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Houston, TX</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Atlanta, GA</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contáctanos</h4>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>123 Main Street<br>Miami, FL 33101</p>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:info@usaproperties.com">info@usaproperties.com</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
                 <p>&copy; 2026 USA Properties. Todos los derechos reservados.</p>
-                <div class="footer-links">
+                <div class="footer-bottom-links">
                     <a href="#">Política de Privacidad</a>
-                    <a href="#">Términos de Uso</a>
+                    <a href="#">Términos de Servicio</a>
+                    <a href="#">Política de Cookies</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
